@@ -5,4 +5,132 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    margin:0;
+}
+
+/* shared-styles */
+.all-btn{
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    width: 180px;
+    height: 64px;
+    font-size:20px;
+    font-weight:600;
+    text-align:center;
+    border:none;
+    cursor: pointer;
+}
+.all-sem-description{
+    color: rgb(114, 114, 114);
+    font-size:1rem;
+    font-weight: 400;
+}
+.flex{
+    display: flex;
+}
+main{
+    max-width:1440px;
+    margin:0 auto;
+}
+section{
+    margin-top:100px;
+}
+/* header-styles */
+
+header{
+    background: rgba(255, 144, 14, 0.1);
+    height:1322px;
+}
+/* nav-section */
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.brand{
+    font-weight:700;
+    font-size: 2.8rem;
+}
+.nav-links{
+    display: flex;
+    list-style:none;
+    gap:50px;
+    justify-content: center;
+}
+.nav-link>a{
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+}
+.navbar,.banner{
+    max-width:1440px;
+    margin:0 auto;
+}
+/* banner-section */
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner-text-box{
+    margin: 0 auto;
+    max-width: 850px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    color:rgba(19,19,19);
+    font-weight:700;
+    font-size:4rem;
+    margin-bottom:0;
+}
+.banner-description{
+    color: rgb(114, 114, 114);
+    font-weight:400;
+    font-size:1rem;
+    margin-bottom: 32px;
+}
+.banner-img{
+    width:100%;
+}
+/* features-section */
+.features-img{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:24px;
+}
+.features{
+    align-items: center;
+    justify-content: space-between;
+}
+.our-features{
+    max-width:534px;
+}
+#quick-list{
+    color: rgb(114, 114, 114);
+    font-weight:500;
+    font-size:2.81rem;
+}
+#of-our{
+    color: rgb(19, 19, 19);
+    font-weight:700;
+    font-size:2.81rem;
+}
+#features{
+    color: rgb(255, 144, 14);
+    font-weight:700;
+    font-size:2.81rem;
+}
+/* mobile-responsive-media-query */
+@media screen and (max-width:576px) {
+    .navbar,
+    .nav-links,
+    .features
+    {
+        flex-direction: column;
+    }
+    .features-img{
+        grid-template-columns:repeat(1, 1fr);
+    }
 }
