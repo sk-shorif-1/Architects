@@ -13,8 +13,7 @@
     border-radius: 8px;
     background: rgb(255, 144, 14);
     color: rgb(255, 255, 255);
-    width: 180px;
-    height: 64px;
+    padding:25px;
     font-size:20px;
     font-weight:600;
     text-align:center;
@@ -132,7 +131,45 @@ header{
     font-size:2.81rem;
 }
 /* love-and-enjoy-section */
+.enjoy{
+    display:flex;
+    gap:146px;
+}
+.joy-title{
+    padding-left:20px;
+    border-left: 5px solid rgb(255, 144, 14);
+    margin: 0;
 
+}
+.joy-description{
+    margin-top:24PX;
+}
+.enjoy-card{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.26);
+    margin-bottom: 20px;
+    border-radius:8px;
+}
+.enjoy-card-title{
+    color: rgb(19, 19, 19);
+    font-weight: 600;
+    font-size:1.43rem;
+    margin:0;
+}
+.enjoy-card-description{
+margin-top: 10PX;
+}
+.jambo-text{
+    font-size: 4rem;
+    font-weight:700;
+}
+#experience{
+    margin-left:-75px;
+    margin-top:-100px;
+}
+#enjoy-img{
+    width:100%;
+}
 /* some-facts-section */
 .facts-Container{
     max-width:542px;
@@ -208,9 +245,13 @@ header{
 @media screen and (max-width:576px) {
     .navbar,
     .nav-links,
-    .features
+    .features,
+    .enjoy
     {
         flex-direction: column;
+    }
+    .enjoy{
+        flex-direction: column-reverse;
     }
     .features-img{
         grid-template-columns:repeat(1, 1fr);
@@ -233,6 +274,10 @@ header{
         justify-items: center;
         gap:30px;
     }
+    #experience{
+        margin-top:20px;
+        margin-left:60px;
+    }
 }
 /* medium-device-responsive-media-query */
 @media screen and (min-width:577px) and (max-width:992px) {
@@ -241,6 +286,9 @@ header{
         flex-direction:column;
         max-width:80%;
         margin:100px auto 0 auto;
+    }
+    .enjoy{
+        flex-direction: column;
     }
     .features-img{
         width:100%;
@@ -269,5 +317,12 @@ header{
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
         gap:25px;
+    }
+    #experience{
+        margin-top:20px;
+        margin-left:1px;
+    }
+    .enjoy{
+        gap:46px;
     }
 }
